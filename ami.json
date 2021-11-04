@@ -9,6 +9,7 @@
       "ami_users": "{{ env `AMI_USERS` }}"
     },
     "builders": [{
+      
       "type": "amazon-ebs",
       "ami_users" : "{{user `ami_users`}}",
       "access_key": "{{user `aws_access_key`}}",
