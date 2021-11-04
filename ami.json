@@ -1,11 +1,11 @@
 {
     "variables": {
-      "aws_access_key": "",
-      "aws_secret_key": "",
-      "aws_region": "",
-      "source_ami": "",
-      "subnet_id": "",
-      "ssh_username": ""
+      "aws_access_key": "{{ env `AWS_ACCESS_KEY_ID` }}",
+      "aws_secret_key": "{{ env `AWS_SECRET_KEY_ID` }}",
+      "aws_region": "{{ env `AWS_REGION` }}",
+      "source_ami": "{{ env `AWS_SOURCE_AMI` }}",
+      "subnet_id": "{{ env `AWS_SUBNET_ID` }}",
+      "ssh_username": "{{ env `AWS_SSH_USERNAME` }}"
     },
     "builders": [{
       "type": "amazon-ebs",
