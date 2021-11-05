@@ -9,7 +9,7 @@
       "ami_users": "{{ env `AMI_USERS` }}"
     },
     "builders": [{
-      
+
       "type": "amazon-ebs",
       "ami_users" : "{{user `ami_users`}}",
       "access_key": "{{user `aws_access_key`}}",
@@ -39,7 +39,18 @@
                 "sudo apt-get install -y libpython3-dev",
                 "sudo apt-get install libpq-dev curl nginx -y",
                 "sudo apt install python3-pip -y",
-                "sudo apt install python3-django -y"
+                "sudo apt install python3-django -y",
+                "sudo apt install ruby-full -y",
+                "sudo apt install wget -y",
+                "sudo apt update -y",
+                "cd /home/ubuntu",
+                "sudo apt update",
+                "sudo apt install ruby-full -y",
+                "sudo apt install wget -y",
+                "wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install",
+                "chmod +x ./install",
+                "sudo ./install auto",
+                "sudo service codedeploy-agent start"
               ]
           }
       ]
