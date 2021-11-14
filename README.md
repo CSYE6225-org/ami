@@ -12,6 +12,8 @@ pip install -r requirements.txt
 
 sudo su - postgres
 
+
+
 CREATE DATABASE 
 	djangodb;
 CREATE USER 

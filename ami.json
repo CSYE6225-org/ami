@@ -8,6 +8,7 @@
       "ssh_username": "{{ env `AWS_SSH_USERNAME` }}",
       "ami_users": "{{ env `AMI_USERS` }}"
     },
+    
     "builders": [{
       "type": "amazon-ebs",
       "ami_users" : "{{user `ami_users`}}",
