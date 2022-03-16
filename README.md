@@ -39,3 +39,4 @@ python3 manage.py runserver 0.0.0.0:8000
 
 Create A record and expose IP
 Run API on postman
+Cool
